@@ -1,5 +1,7 @@
 {% extends "template.njk" %}
 
+{% from "moj-header/macro.njk"     import mojHeader %}
+
 {% block headIcons %}
   <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
   <link rel="mask-icon" href="{{ asset_path }}images/gov.uk_logotype_crown.svg?0.18.3" color="#0b0c0c">
@@ -13,8 +15,20 @@
   <link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css">
 {% endblock %}
 
-{% block header %}{% endblock %}
-{% block footer %}{% endblock %}
+{% block header %}
+  {% include "includes/cookie-banner.html" %}
+  {# Set serviceName in config.js. #}
+  {{ mojHeader({
+    homepageUrl: "/",
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
 
 {% block bodyEnd %}
   {% include "includes/scripts.html" %}
