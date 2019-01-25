@@ -1,0 +1,35 @@
+// Note - this code for prototype purposes only. It is not production code,
+
+.primary-nav {
+  background-color: white;
+  margin-bottom:60px;
+  border-bottom: 1px solid #DEE0E2;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 19px;
+    padding: 0.25em 0.25em 0.75em 0.25em;
+  }
+
+  a.active {
+    border-bottom: 5px solid #005ea5;
+  }
+}
+
+.primary-nav-item {
+  margin-right:15px;
+  font-weight: bold;
+  display: inline-flex;
+}
+
+   
+
+
+
