@@ -15,16 +15,15 @@
   a {
     text-decoration: none;
     font-size: 19px;
-    padding: 0.25em 0.25em 0.75em 0.25em;
+    padding: 0.25em 0.75em 0.75em 0.75em;
   }
 
   a.active {
-    border-bottom: 5px solid #005ea5;
+    border-bottom: 3px solid #005ea5;
   }
 }
 
 .primary-nav-item {
-  margin-right:15px;
   font-weight: bold;
   display: inline-flex;
 }

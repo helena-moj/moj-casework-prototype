@@ -3,6 +3,7 @@
 .switcher {
   border-bottom: 1px solid #DEE0E2;
   margin-bottom:30px;
+  padding-bottom:5px;
 }
 
 .switcher-current-agency {
@@ -15,7 +16,8 @@
 
 .switcher-change-link {
   text-align: right;
-  padding: 0px;
+  padding-right:0px;
+  padding-top:2px;
 }
 
 ul.switcher-agency-list {
